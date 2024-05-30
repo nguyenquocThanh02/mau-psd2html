@@ -1,13 +1,9 @@
 import "./App.css";
 import "./index.css";
-
 import "./assets/react.svg";
-
-import "./App.css";
 import "./assets/The_Playground";
-
-import { useState } from "react";
 import image from "./assets/The_Playground.png";
+import { useState } from "react";
 
 const App = () => {
   const [state, setState] = useState(false);
