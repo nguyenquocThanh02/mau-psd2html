@@ -10,6 +10,8 @@ const App = () => {
 
   var x = 2;
 
+  const thanh_ne = "ne";
+
   const a = [
     {
       x: "a",
