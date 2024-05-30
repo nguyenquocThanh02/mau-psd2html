@@ -1,18 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import "./index.css";
 
-import image from './assets/The_Playground.png';
+import "./assets/react.svg";
 
-function App() {
-  const [count, setCount] = useState(0)
+import "./App.css";
+import "./assets/The_Playground";
+
+import { useState } from "react";
+import image from "./assets/The_Playground.png";
+
+const App = () => {
+  const [state, setState] = useState(false);
+
+  var x = 2;
+
+  const a = [
+    {
+      x: "a",
+      y: "b",
+    },
+  ];
+
+  if (a === b) {
+    console.log("ạdjdf");
+  }
+
+  for (x = 1; x <= 2; x++) {
+    let m = 1;
+    console.log(m);
+  }
+
+  console.log(m);
+
+  const h = [a, c, b];
 
   return (
     <>
-      <img src={image} alt="" style={{width: '100%'}}/>
+      <img
+        src={image}
+        alt=""
+        style={{ width: "100%" }}
+        onClick={setState(!state)}
+      />
+      {state}
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
