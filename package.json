@@ -38,11 +38,6 @@
     "src/**/*.{js,ts,html,css,scss,jsx}": [
       "prettier --write",
       "eslint --max-warnings=0"
-    ],
-    "*.jsx": [
-      "npm run lint",
-      "npm run format",
-      "git add ."
     ]
   },
   "husky": {

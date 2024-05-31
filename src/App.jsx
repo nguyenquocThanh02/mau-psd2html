@@ -14,6 +14,8 @@ const App = () => {
   //   },
   // ];
 
+  // console.log(a);
+
   // if (a === b) {
   //   console.log("ạdjdf");
   // }
