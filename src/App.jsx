@@ -8,6 +8,8 @@ import { useState } from "react";
 const App = () => {
   const [state, setState] = useState(false);
 
+  var thanh = "aa";
+
   const a = [
     {
       x: "a",
