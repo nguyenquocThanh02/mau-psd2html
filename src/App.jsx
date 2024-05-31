@@ -2,19 +2,16 @@ import "./App.css";
 import "./index.css";
 import "./assets/react.svg";
 import "./assets/The_Playground";
-//import { useState } from "react";
 
 const App = () => {
-  // const [state, setState] = useState(false);
+  const a = [
+    {
+      x: "a",
+      y: "b",
+    },
+  ];
 
-  // const a = [
-  //   {
-  //     x: "a",
-  //     y: "b",
-  //   },
-  // ];
-
-  // console.log(a);
+  // console.log(aB);
 
   // if (a === b) {
   //   console.log("ạdjdf");
@@ -31,7 +28,7 @@ const App = () => {
 
   return (
     <>
-      <div></div>
+      <div>{a}</div>
     </>
   );
 };

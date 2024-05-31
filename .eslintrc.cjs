@@ -30,7 +30,6 @@ module.exports = {
     semi: ["error", "always"],
     quotes: ["error", "double"],
     indent: ["error", 2],
-    //"comma-dangle": ["error", "always"],
     "arrow-spacing": ["error"],
     "no-undef": ["error"],
     "no-unused-vars": ["error"],
