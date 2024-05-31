@@ -8,10 +8,6 @@ import { useState } from "react";
 const App = () => {
   const [state, setState] = useState(false);
 
-  var x = 2;
-
-  const thanh_ne = "ne";
-
   const a = [
     {
       x: "a",

@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "postinstall": "husky install",
+    "format": "prettier --write \"./**/*.js\" --ignore-path .gitignore",
+    "lint": "eslint \"./**/*.js\" --ignore-path .gitignore --fix",
     "preview": "vite preview",
     "commit": "cz"
   },
@@ -32,9 +34,9 @@
     "vite": "^5.2.0"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
+    "*.ts": [
+      "npm run lint",
+      "npm run format"
     ]
   },
   "husky": {
