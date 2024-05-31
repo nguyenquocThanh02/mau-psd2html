@@ -34,9 +34,13 @@
     "vite": "^5.2.0"
   },
   "lint-staged": {
-    "**/*.{js,jsx}": [
-      "npm run lint",
-      "prettier --write"
+    "*.{js,tsx}": [
+      "./node_modules/.bin/eslint --fix",
+      "git add"
+    ],
+    "*.{js, jsx, json, html, css}": [
+      "./node_modules/.bin/prettier --write",
+      "git add"
     ]
   },
   "husky": {
