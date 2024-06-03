@@ -1,16 +1,7 @@
 import "./App.css";
 import "./index.css";
-import "./assets/react.svg";
-import "./assets/The_Playground";
 
 const App = () => {
-  const a = [
-    {
-      x: "a",
-      y: "b",
-    },
-  ];
-
   // console.log(aB);
 
   // if (a === b) {
@@ -26,11 +17,7 @@ const App = () => {
 
   // const h = [a, c, b];
 
-  return (
-    <>
-      <div>{a} test again</div>
-    </>
-  );
+  return <div className="container"></div>;
 };
 
 export default App;

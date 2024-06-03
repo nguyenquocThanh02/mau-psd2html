@@ -10,8 +10,36 @@ module.exports = {
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
-  plugins: ["react-refresh"],
+  plugins: ["react-refresh", "filenames", "import", "unicorn"],
   rules: {
+    "import/order": [
+      "error",
+      {
+        groups: ["builtin", "external", "internal"],
+        pathGroups: [
+          {
+            pattern: "{react,react-dom/**}",
+            group: "external",
+            position: "before",
+          },
+        ],
+        pathGroupsExcludedImportTypes: ["react"],
+        "newlines-between": "always",
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
+      },
+    ],
+    "unicorn/filename-case": [
+      "error",
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+        },
+      },
+    ],
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
       "warn",
@@ -34,7 +62,6 @@ module.exports = {
     "no-undef": ["error"],
     "no-unused-vars": ["error"],
     "block-scoped-var": ["error"],
-    "sort-imports": ["error"],
     "no-regex-spaces": ["error"],
     "no-multi-spaces": ["error"],
     "no-multiple-empty-lines": [
