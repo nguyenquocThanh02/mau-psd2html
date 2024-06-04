@@ -25,10 +25,6 @@ module.exports = {
         ],
         pathGroupsExcludedImportTypes: ["react"],
         "newlines-between": "always",
-        alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
-        },
       },
     ],
     "unicorn/filename-case": [
@@ -57,7 +53,6 @@ module.exports = {
     "no-console": ["warn"],
     semi: ["error", "always"],
     quotes: ["error", "double"],
-    indent: ["error", 2],
     "arrow-spacing": ["error"],
     "no-undef": ["error"],
     "no-unused-vars": ["error"],
